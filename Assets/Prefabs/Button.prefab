@@ -225,4 +225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5131de129ac8255409563c64d7902b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerManager: {fileID: 0}
+  NetworkManager: {fileID: 0}
+  PlayerCard: {fileID: 6698809748210893588, guid: c61ebb3b1a3c0674ab15fcc3d49ae24b, type: 3}
+  PlayerArea: {fileID: 3391112704884626012, guid: 128022809d6fc3b47a35f29f439ffc58, type: 3}

@@ -53,13 +53,12 @@
     <UnityVersion>2020.2.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\DrawCards.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\CardZoom.cs" />
-    <Compile Include="Assets\Scripts\CardFlipper.cs" />
-    <Compile Include="Assets\Scripts\NetworkManager.cs" />
+    <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\GameState.cs" />
+    <Compile Include="Assets\Scripts\NetworkManager.cs" />
+    <Compile Include="Assets\Scripts\CardZoom.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -692,6 +691,9 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="LucidSight.Editor.Tests">
+      <HintPath>Library\ScriptAssemblies\LucidSight.Editor.Tests.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -713,17 +715,14 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="LucidSight.Runtime.ColyseusSDK">
+      <HintPath>Library\ScriptAssemblies\LucidSight.Runtime.ColyseusSDK.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="LucidSight.Runtime.ColyseusSDK">
-      <HintPath>Library\ScriptAssemblies\LucidSight.Runtime.ColyseusSDK.dll</HintPath>
-    </Reference>
-    <Reference Include="LucidSight.Editor.Tests">
-      <HintPath>Library\ScriptAssemblies\LucidSight.Editor.Tests.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

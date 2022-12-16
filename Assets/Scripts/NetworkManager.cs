@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public class NetworkManager : MonoBehaviour
 {
+    public GameObject GameManager;
     private static ColyseusClient _client = null;
     private static ColyseusRoom<GameState> _room = null;
 
@@ -27,10 +28,12 @@ public class NetworkManager : MonoBehaviour
             if (message == "draw")
             {
                 Debug.Log("draw");
+                GameManager.GetComponent<GameManager>().Draw("OpponentCards");
             }
             else if (message == "drop")
             {
                 Debug.Log("drop");
+                GameManager.GetComponent<GameManager>().Drop();
             }
         });
     }

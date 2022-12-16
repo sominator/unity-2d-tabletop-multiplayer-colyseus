@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class DrawCards : MonoBehaviour
 {
+    public GameObject GameManager;
     public NetworkManager NetworkManager;
-
-    private void Start()
-    {
-        NetworkManager = GameObject.Find("NetworkManager").GetComponent<NetworkManager>();
-    }
 
     public void OnClick()
     {
-        NetworkManager.SendMessage("draw");
+        GameManager.GetComponent<GameManager>().Draw("PlayerCards");
+        NetworkManager.GetComponent<NetworkManager>().SendMessage("draw");
     }
-
 }
